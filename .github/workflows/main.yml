@@ -7,6 +7,8 @@ name: build-and-deploy
 
 jobs:
   build:
+    permissions:
+      contents: write
     timeout-minutes: 5
     name: Build & Deploy
     runs-on: ubuntu-latest
