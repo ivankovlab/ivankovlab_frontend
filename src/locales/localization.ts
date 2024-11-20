@@ -12,7 +12,7 @@ export const messages = {
     },
     laboratoryName: 'Ivankov Lab',
     laboratorySlogan:
-      'Protein structure bioinformatics and evolution.',
+      'Protein bioinformatics and evolution.',
     laboratory: [
       {
         title: 'About Us',
