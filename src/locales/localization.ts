@@ -1,10 +1,6 @@
 export const messages = {
   ru: {
-    title: 'ProDDG',
-    notFound: 'Страница не найдена',
-    laboratoryName: 'Ivankov Lab',
-    laboratorySlogan:
-      'Protein structure bionformatics and evolution.',
+    // Add other languages
   },
   en: {
     title: 'ProDDG',
@@ -16,7 +12,7 @@ export const messages = {
     },
     laboratoryName: 'Ivankov Lab',
     laboratorySlogan:
-      'Protein bioinformatics and evolution.',
+      'Protein structure bioinformatics and evolution.',
     laboratory: [
       {
         title: 'About Us',
