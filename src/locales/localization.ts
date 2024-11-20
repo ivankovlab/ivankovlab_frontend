@@ -4,7 +4,7 @@ export const messages = {
     notFound: 'Страница не найдена',
     laboratoryName: 'Ivankov Lab',
     laboratorySlogan:
-      'Protein bioinformatics and evolution.',
+      'Protein structure bionformatics and evolution.',
   },
   en: {
     title: 'ProDDG',
