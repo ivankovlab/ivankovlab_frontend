@@ -94,17 +94,45 @@ export const messages = {
         publications: [
           {
             title:
-              'Kazanov FM, Matveev EV, Ponomarev GV, Ivankov DN, Kazanov MD. (2024). Analysis of the abundance and diversity of RNA secondary structure elements in RNA viruses using the RNAsselem Python package. Scientific Reports, 14:28587',
+              'Kazanov FM, Matveev EV, Ponomarev GV, Ivankov DN, Kazanov MD. (2024). Analysis of the abundance and diversity of RNA secondary structure elements in RNA viruses using the RNAsselem Python package. <i>Scientific Reports</i>, 14:28587',
             description:
               'Recent advancements in experimental and computational methods for RNA secondary structure detection have revealed the crucial role of RNA structural elements in diverse molecular processes within living cells. It has been demonstrated that the secondary structure of the entire viral genome is often responsible for performing crucial functions in the viral life cycle and also influences virus evolution. To investigate the role of viral RNA secondary structure, alongside experimental techniques, the use of bioinformatics tools is important for analyzing various secondary structure patterns, including hairpin loops, internal loops, multifurcations, external loops, bulges, stems, and pseudoknots. Here, we have introduced a Python package for analyzing RNA secondary structure elements in viral genomes, which includes the recognition of common secondary structure patterns, the generation of descriptive statistics for these structural elements, and the provision of their basic properties. We applied the developed package to analyze the secondary structures of complete viral genomes collected from the literature, aiming to gain insights into viral function and evolution. Both the package and the collection of secondary structures of viral genomes are available at http://github.com/KazanovLab/RNAsselem.',
             url: 'https://doi.org/10.1038/s41598-024-80240-5',
           },
           {
             title:
-              'Bulavko ES, Pak MA, Ivankov DN. (2023). In silico simulations reveal molecular mechanism of uranyl ion toxicity towards DNA-binding domain of PARP-1 protein.',
+              'Zhegalova IV, Ulianov SV, Galitsyna AA, Pletenev IA, Tsoy OV, Luzhin AV, Vasiluev PA, Bulavko ES, Ivankov DN, Gavrilov AA, Khrameeva EE, Gelfand MS, Razin SV. (2024) Convergent gene pairs restrict chromatin looping in <i>Dictyostelium discoideum</i>, acting as directional barriers for extrusion. <i>bioRxiv</i>, 2024.06.12.598618.',
+            description:
+              '<i>Dictyostelium discoideum</i> is a unicellular slime mold, developing into a multicellular fruiting body upon starvation. Development is accompanied by large-scale shifts in gene expression program, but underlying features of chromatin spatial organization remain unknown. Here, we report that the Dictyostelium 3D genome is organized into positionally conserved, largely consecutive, non hierarchical and weakly insulated loops at the onset of multicellular development. The transcription level within the loop interior tends to be higher than in adjacent regions. Loop interiors frequently contain functionally linked genes and genes which coherently change expression level during development. Loop anchors are predominantly positioned by the genes in convergent orientation. Our data suggest that the loop profile may arise from the interplay between transcription and extrusion-driven chromatin folding. In particular, a convergent gene pair serves as a bidirectional extrusion barrier or a “diode” that controls passage of the cohesin extruder by relative transcription level of paired genes',
+            url: 'https://doi.org/10.1101/2024.06.12.598618',
+          },
+          {
+            title:
+              'Frolova D, Pak MA, Litvin A, Sharov I, Ivankov DN, Oseledets I. (2024) MULAN: multimodal protein language model for sequence and structure encoding. <i>bioRxiv</i>, 2024.05.30.596565.',
+            description:
+              '',
+            url: 'https://doi.org/10.1101/2024.05.30.596565',
+          },
+          {
+            title:
+              'Bogatyreva NS, Finkelstein AV, Ivankov DN. (2024) A pitfall of iterative Ψ-BLAST. <i>J. Mol. Biomed. Res.</i>, 1:1',
+            description:
+              '',
+            url: 'https://doi.org/10.59462/JMBR.1.1.101',
+          },
+          {
+            title:
+              'Finkelstein AV, Ivankov DN. (2024) Protein 3D structure identification by AlphaFold: a physics-based prediction or recognition using huge databases? <i>The Journal of Molecular Biology</i>, 6:3935',
+            description:
+              '',
+            url: 'https://doi.org/10.52338/tjomb.2024.3935',
+          },
+          {
+            title:
+              'Bulavko ES, Pak MA, Ivankov DN. (2023). <i>In silico</i> simulations reveal molecular mechanism of uranyl ion toxicity towards DNA-binding domain of PARP-1 protein. <i>Biomolecules</i>, 13:1269',
             description:
               'The molecular toxicity of uranyl ion (UO22+) in living cells is mainly conditioned by its high affinity to both native and potential metal-binding sites frequently occurring in biomolecules structure. Recent advances in computational and experimental research shed light on the structural properties and functional impacts of uranyl binding to proteins, organic ligands, nucleic acids and their complexes. In the present work, we report the results of the theoretical investigation of the uranyl-mediated loss of DNA-binding activity of PARP-1, eukaryotic enzyme that participates in DNA reparation, cell differentiation, induction of inflammation, etc. Latest experimental studies showed that uranyl ion directly interacts with its DNA-binding subdomains - zinc fingers Zn1 and Zn2, - and changes their tertiary structure. Here, we propose an atomistic mechanism underlying this process and compute the free energy change along the suggested pathway to prove its relevance. According to the results of our QM/MM simulations of Zn2-UO22+ complex, uranyl ion replaces zinc in its native binding site, but the corresponding state is destroyed because of the following spontaneous internal hydrolysis of the U-Cys162 coordination bond. Although the enthalpy of hydrolysis is +2.8 kcal/mol, the final value of the free energy of the reaction constitutes -0.6 kcal/mol, due to structure loosening evidenced by solvation and configuration thermodynamic properties calculated using GIST- and MIST-based trajectory processing techniques. The subsequent reorganization of the binding site includes association of uranyl ion with the Glu190/Asp191 acidic cluster and significant perturbations in the domain\'s tertiary structure, which further decreases the free energy of the non-functional state by 6.8 kcal/mol. The disruption of the DNA-binding interface revealed in our computational simulations is consistent with previous experimental findings and appears to be associated with the loss of the Zn2 affinity for nucleic acids.',
-            url: 'https://doi.org/10.1101/2023.06.02.543417',
+            url: 'https://doi.org/10.3390/biom13081269',
           },
           {
             title:
