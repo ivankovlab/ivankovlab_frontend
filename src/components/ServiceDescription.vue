@@ -115,7 +115,7 @@ v-col.px-0
               v-for='thesis in getAnnualByYear(section.data, year)'
             )
               .thesis-title {{ thesis.title }}
-              .thesis-description {{ thesis.description }}
+              .thesis-description(v-html='thesis.description')
 </template>
 
 <script lang="ts">
