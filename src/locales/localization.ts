@@ -281,16 +281,6 @@ export const messages = {
         type: 'blocks',
         blocks: [
           {
-            title: 'Sequence number',
-            description: '',
-            url: 'https://old.ivankovlab.ru/sequence_number',
-            image: require('../assets/sequence_number.png'),
-          },
-          // {
-          //   title: 'Fitland',
-          //   image: '',
-          // },
-          {
             title: 'ProDDG',
             description: '',
             url: 'proddg',
@@ -302,7 +292,16 @@ export const messages = {
             url: 'https://ivankovlab.ru/megaddg_plots.html',
             image: require('../assets/newplot.webp'),
           },
-
+          {
+            title: 'Sequence number',
+            description: '',
+            url: 'https://old.ivankovlab.ru/sequence_number',
+            image: require('../assets/sequence_number.png'),
+          },
+          // {
+          //   title: 'Fitland',
+          //   image: '',
+          // },
         ],
       },
       { 
