@@ -87,7 +87,8 @@ v-col.px-0
             div 
               p.mb-2.publication-description.sf(
                 v-show='isPublicationOpen[p_id]'
-              ) {{ publication.description }}
+                v-html='publication.description'
+              )
               a.sf(
                 v-show='isPublicationOpen[p_id]',
                 :href='publication.url',
