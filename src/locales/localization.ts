@@ -201,7 +201,7 @@ export const messages = {
             title:
               'Tsitrina AA, Krasylov IV, Maltsev DI, Andreichenko IN, Moskvina VS, Ivankov DN, Bulgakova EV, Nesterchuk M, Shashkovskaya V, Dashenkova NO, Khilya VP, Mikaelyan A, Kotelevtsev Y. <br><a href="https://doi.org/10.1093/glycob/cwab038">Inhibition of hyaluronan secretion by novel coumarin compounds and chitin synthesis inhibitors</a> <br><i>Glycobiology</i>, 2021, 31:959-974',
             description:
-              'Elevated plasma levels of hyaluronic acid (HA) is a disease marker in liver pathology and other inflammatory disorders. Inhibition of HA synthesis with coumarin 4-methylumbelliferone (4MU) has a beneficial effect in animal models of fibrosis, inflammation, cancer and metabolic syndrome. 4MU is an active compound of approved choleretic drug hymecromone with low bioavailability and a broad spectrum of action. New, more specific and efficient inhibitors of hyaluronan synthases (HAS) are required. We have tested several newly synthesized coumarin compounds and commercial chitin synthesis inhibitors to inhibit HA production in cell culture assay. Coumarin derivative compound VII (10'-methyl-6'-phenyl-3'H-spiro[piperidine-4,2'-pyrano[3,2-g]chromene]-4',8'-dione) demonstrated inhibition of HA secretion by NIH3T3 cells with the half-maximal inhibitory concentration (IC<sub>50</sub>) = 1.69 ± 0.75 μM superior to 4MU (IC50 = 8.68 ± 1.6 μM). Inhibitors of chitin synthesis, etoxazole, buprofezin, triflumuron, reduced HA deposition with IC<sub>50</sub> of 4.21 ± 3.82 μM, 1.24 ± 0.87 μM and 1.48 ± 1.44 μM, respectively. Etoxazole reduced HA production and prevented collagen fibre formation in the CCl<sub>4</sub> liver fibrosis model in mice similar to 4MU. Bioinformatics analysis revealed homology between chitin synthases and HAS enzymes, particularly in the pore-forming domain, containing the proposed site for etoxazole binding.',
+              'Elevated plasma levels of hyaluronic acid (HA) is a disease marker in liver pathology and other inflammatory disorders. Inhibition of HA synthesis with coumarin 4-methylumbelliferone (4MU) has a beneficial effect in animal models of fibrosis, inflammation, cancer and metabolic syndrome. 4MU is an active compound of approved choleretic drug hymecromone with low bioavailability and a broad spectrum of action. New, more specific and efficient inhibitors of hyaluronan synthases (HAS) are required. We have tested several newly synthesized coumarin compounds and commercial chitin synthesis inhibitors to inhibit HA production in cell culture assay. Coumarin derivative compound VII (10\'-methyl-6\'-phenyl-3\'H-spiro[piperidine-4,2\'-pyrano[3,2-g]chromene]-4\',8\'-dione) demonstrated inhibition of HA secretion by NIH3T3 cells with the half-maximal inhibitory concentration (IC<sub>50</sub>) = 1.69 ± 0.75 μM superior to 4MU (IC50 = 8.68 ± 1.6 μM). Inhibitors of chitin synthesis, etoxazole, buprofezin, triflumuron, reduced HA deposition with IC<sub>50</sub> of 4.21 ± 3.82 μM, 1.24 ± 0.87 μM and 1.48 ± 1.44 μM, respectively. Etoxazole reduced HA production and prevented collagen fibre formation in the CCl<sub>4</sub> liver fibrosis model in mice similar to 4MU. Bioinformatics analysis revealed homology between chitin synthases and HAS enzymes, particularly in the pore-forming domain, containing the proposed site for etoxazole binding.',
             url: 'https://doi.org/10.1093/glycob/cwab038',
           },
           {
@@ -280,10 +280,12 @@ export const messages = {
         title: 'Applications',
         type: 'blocks',
         blocks: [
-          // {
-          //   title: 'Sequence number',
-          //   image: '',
-          // },
+          {
+            title: 'Sequence number',
+            description: '',
+            url: 'https://old.ivankovlab.ru/sequence_number',
+            image: require('../assets/sequence_number.png'),
+          },
           // {
           //   title: 'Fitland',
           //   image: '',
