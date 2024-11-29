@@ -247,6 +247,11 @@ export const messages = {
             year: 2023,
           },
           {
+            title: 'Shah Zeb Khan, MSc',
+            description: 'Computational screening of novel compounds for targeting Anopheles gambiae olfactory receptor co-receptor (AgOrco) in mosquito repellent discovery',
+            year: 2023,
+          },
+          {
             title: 'Evgenii Zorin, MSc',
             description: 'Investigation of epistasis using composite mutations',
             year: 2022,
