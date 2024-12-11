@@ -282,7 +282,7 @@ export const messages = {
         blocks: [
           {
             title: 'ProDDG',
-            description: '',
+            description: 'test message',
             url: 'proddg',
             image: require('../assets/proddg-light.webp'),
           },
