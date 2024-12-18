@@ -5,7 +5,7 @@ v-col.px-0
     :class='s_id >= 2 ? "pt-11 pb-11" : "pt-3 pb-3"',
     :key='s_id'
   )
-    h2.sf.section-title.pb-10 {{ section.title }}
+    h2.sf.section-title.pb-10(v-if='section.type != "cards-small-with-spoiler"') {{ section.title }}
     div(v-if='section.type == "paragraphs"') 
       .sf(v-for='(paragraph, p_id) in section.paragraphs')
         div(v-if='typeof paragraph == typeof {}' style="max-width: 875px")
@@ -64,6 +64,31 @@ v-col.px-0
           v-card-title.ml-sm-2.ml-xs-0.sf
             a.no-link-decoration(:href='card.url', target='_blank') {{ card.title }}
           v-card-subtitle.ml-sm-2.ml-xs-0.mb-sm-2.mb-xs-0.sf {{ card.subtitle }}
+    div(v-if='section.type == "cards-small-with-spoiler"')
+      input(
+        v-model='isCardsSmallOpen',
+        type='checkbox',
+        :id='"s-" + s_id',
+        style='display: none'
+      )
+      label(:for='"s-" + s_id') 
+        h2.sf.section-title.pb-10 
+          span {{ section.title }}
+          v-icon.pt-2(x-large, v-if='!isCardsSmallOpen') mdi-menu-right
+          v-icon.pt-2(x-large, v-else) mdi-menu-down
+      transition(name='fadeHeight', mode='in-out')
+        #cards.cards--small.d-flex
+          v-card.ma-4.ml-0(
+            v-show='isCardsSmallOpen',
+            flat,
+            elevation=0,
+            v-for='(card, c_id) in section.cards',
+            :key='c_id'
+          )
+            v-img.white--text.align-end(:src='card.image')
+              v-card-title.ml-sm-1.ml-xs-0.sf
+                a.no-link-decoration(:href='card.url', target='_blank') {{ card.title }}
+              v-card-subtitle.ml-sm-1.ml-xs-0.mb-sm-1.mb-xs-0.sf {{ card.subtitle }}
     div(v-if='section.type == "publications"')
       .publication.mb-8(
         v-if='section.publications'
@@ -132,6 +157,7 @@ import Component from 'vue-class-component'
 export default class ServiceDescription extends Vue {
   itemsPath!: string
 
+  isCardsSmallOpen = false
   isPublicationOpen: boolean[] = []
 
   isYearOpen: boolean[] = []
@@ -356,8 +382,27 @@ p.paragraph.paragraph-small {
   filter: drop-shadow(-1px 1px 6px rgba(0, 0, 0, 0.15));
   align-self: center;
 }
+.cards--small .v-card__title,
+.cards--small .v-card__subtitle {
+  padding: 6px;
+}
+.cards--small .v-card__title {
+  padding-bottom: 14px;
+}
+.cards--small .v-card__subtitle {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
 @media screen and (max-width: 600px) {
   #cards > * {
+    flex: 0 0 44%;
+  }
+  #cards.cards--small > * {
+    flex: 0 0 28%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #cards.cards--small > * {
     flex: 0 0 44%;
   }
 }
@@ -365,13 +410,22 @@ p.paragraph.paragraph-small {
   #cards > * {
     flex: 0 0 30%;
   }
+  #cards.cards--small > * {
+    flex: 0 0 21%;
+  }
 }
 @media screen and (min-width: 900px) {
   #cards > * {
     flex: 0 0 21%;
   }
+  #cards.cards--small > * {
+    flex: 0 0 12%;
+  }
 }
 
+#cards.cards--small > .v-card > .v-image > .v-responsive__content > .v-card__title {
+  font-size: 12px;
+}
 #cards > .v-card > .v-image > .v-responsive__content > .v-card__title {
   white-space: pre-line;
   word-break: break-word;

@@ -88,6 +88,24 @@ export const messages = {
           },
         ],
       },
+      // {
+      //   title: 'Past members',
+      //   type: 'cards-small-with-spoiler',
+      //   cards: [
+      //     {
+      //       title: 'Lorem Ipsum',
+      //       subtitle: 'Position',
+      //       url: 'https://faculty.skoltech.ru/people/',
+      //       image: require('../assets/avatar.svg'),
+      //     },
+      //     {
+      //       title: 'Lorem Ipsum',
+      //       subtitle: 'Position',
+      //       url: 'https://faculty.skoltech.ru/people/',
+      //       image: require('../assets/avatar.svg'),
+      //     },
+      //   ],
+      // },
       {
         title: 'Publications',
         type: 'publications',
@@ -282,7 +300,7 @@ export const messages = {
         blocks: [
           {
             title: 'ProDDG',
-            description: 'test message',
+            description: '',
             url: 'proddg',
             image: require('../assets/proddg-light.webp'),
           },
