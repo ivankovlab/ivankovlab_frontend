@@ -314,7 +314,13 @@ export const messages = {
             title: 'Sequence number',
             description: '',
             url: 'https://old.ivankovlab.ru/sequence_number',
-            image: require('../assets/sequence_number.png'),
+            image: require('../assets/sequence_number.webp'),
+          },
+          {
+            title: 'Kinetic DB',
+            description: '',
+            url: 'https://kineticdb.ivankovlab.ru/',
+            image: require('../assets/kineticdb.webp'),
           },
           // {
           //   title: 'Fitland',
